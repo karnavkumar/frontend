@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html lang="en"  class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html lang="en"  class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html lang="en"  class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]> <html lang="en"  class="no-js"> <![endif]-->
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Suvas Agarbatti</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="bower_components/alertifyjs/dist/css/alertify.css"/>
+    <link rel="stylesheet" href="css/slider.css"/>
+</head>
+<body class="container-fluid">
+    <header>
+        <nav class="navbar navbar-default">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <a class="navbar-brand" href="#">Suvas Agarbatti</a>
+                </div>
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="btn-group">
+                        <a href="#"> <button onclick="registerPage();" class="btn btn-default btn-group-vertical" data-toggle="modal" data-target="#loginPage"><span class="glyphicon glyphicon-user"></span> Sign Up</button>
+                            <button onclick="loginPage();" class="btn btn-primary btn-group-vertical" data-toggle="modal" data-target="#loginPage"><span class="glyphicon glyphicon-log-in"></span> Login</button></a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <!-- Modal -->
+    <div class="modal fade" id="loginPage" role="dialog">
+        <div class="modal-dialog">
+
+            <!-- Modal content-->
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h4 class="modal-title">Modal Header</h4>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="form-group">
+                            <label for="exampleInputEmail1">User Name</label>
+                            <input type="text" class="form-control" id="usrName" aria-describedby="userNameHelp" placeholder="Enter email">
+
+                        </div>
+                        <div class="form-group">
+                            <label for="exampleInputPassword1">Password</label>
+                            <input type="password" class="form-control" id="usrPwd" placeholder="Password">
+                        </div>
+                        <div class="form-group" id="registerApp"></div>
+                        <div class="form-check">
+                            <label class="form-check-label">
+                                <input type="checkbox" class="form-check-input">
+                                Check me out
+                            </label>
+                        </div>
+                        <input type="button" class="btn btn-success" onclick="login();" value="Login">
+                    </form> 
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--hell-->
+
+    <ul class="pgwSlider">
+        <li><img src="images/img.png" alt="Paris, France" data-description="Eiffel Tower and Champ de Mars"></li>
+        <li><img src="images/img.png" alt="Montréal, QC, Canada" data-large-src="images/img.png"></li>
+        <li>
+            <img src="images/img.png">
+            <span>Shanghai, China</span>
+        </li>
+        <li>
+            <a href="http://www.nyc.gov" target="_blank">
+                <img src="images/img.png">
+                <span>New York, NY, USA</span>
+            </a>
+        </li>
+    </ul>
+
+    <footer></footer>
+
+    <script src="bower_components/alertifyjs/dist/js/alertify.js"></script>
+    <script src="bower_components/jquery/dist/jquery.min.js"></script>
+    <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="bower_components/popper.js/dist/umd/popper.min.js"></script>   
+    <script src="js/slider.min.js"></script>   
+    <script src="js/globalVar.js"></script>
+    <script src="js/script.js"></script>
+
+
+    <script type="text/javascript">
+ $(document).ready(function() {
+    $('.pgwSlider').pgwSlider();
+});
+    </script>
+</body>
+</html>

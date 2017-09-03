@@ -1,0 +1,15 @@
+{
+  "name": "frontend",
+  "version": "1.0.0",
+  "main": "path/to/main.css",
+  "ignore": [
+    ".jshintrc",
+    "**/*.txt"
+  ],
+  "dependencies": {
+    "bootstrap": "v4.0.0-beta",
+    "alertifyjs": "^1.0.11",
+    "modernizr": "^3.5.0"
+  },
+  "devDependencies": {}
+}
